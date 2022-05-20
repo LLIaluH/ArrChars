@@ -6,15 +6,15 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v3.1": {
-      "ArrChars/1.0.0": {
+      "NewArrChars/1.0.0": {
         "runtime": {
-          "ArrChars.dll": {}
+          "NewArrChars.dll": {}
         }
       }
     }
   },
   "libraries": {
-    "ArrChars/1.0.0": {
+    "NewArrChars/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

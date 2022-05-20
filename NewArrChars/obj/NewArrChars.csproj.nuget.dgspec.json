@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mikheev_av1\\source\\repos\\ArrChars\\ArrChars\\ArrChars.csproj": {}
+    "C:\\Users\\mikheev_av1\\source\\repos\\ArrChars\\NewArrChars\\NewArrChars.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mikheev_av1\\source\\repos\\ArrChars\\ArrChars\\ArrChars.csproj": {
+    "C:\\Users\\mikheev_av1\\source\\repos\\ArrChars\\NewArrChars\\NewArrChars.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mikheev_av1\\source\\repos\\ArrChars\\ArrChars\\ArrChars.csproj",
-        "projectName": "ArrChars",
-        "projectPath": "C:\\Users\\mikheev_av1\\source\\repos\\ArrChars\\ArrChars\\ArrChars.csproj",
+        "projectUniqueName": "C:\\Users\\mikheev_av1\\source\\repos\\ArrChars\\NewArrChars\\NewArrChars.csproj",
+        "projectName": "NewArrChars",
+        "projectPath": "C:\\Users\\mikheev_av1\\source\\repos\\ArrChars\\NewArrChars\\NewArrChars.csproj",
         "packagesPath": "C:\\Users\\mikheev_av1\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mikheev_av1\\source\\repos\\ArrChars\\ArrChars\\obj\\",
+        "outputPath": "C:\\Users\\mikheev_av1\\source\\repos\\ArrChars\\NewArrChars\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\mikheev_av1\\AppData\\Roaming\\NuGet\\NuGet.Config",
