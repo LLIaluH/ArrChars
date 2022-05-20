@@ -9,11 +9,18 @@ namespace NewArrChars
         List<Word> Words;
         public void Start()
         {
-            var words = ArrReader.Read(@"C:\Users\mikheev_av1\Desktop\qweqwe.txt");//для чтения из файла
-
-            //ArrGenerator arrGenerator = new ArrGenerator(100, 100);//для генератора
-            //var words = arrGenerator.WordsList;
-
+            Console.WriteLine("Нажмите Y, чтобы автоматически сгенерировать слова. Чтобы читать из файла, нажмите Enter...");
+            List<string> words;
+            if (Console.ReadKey().Key == ConsoleKey.Y)
+            {
+                ArrGenerator arrGenerator = new ArrGenerator(50, 100000);//для генератора
+                words = arrGenerator.WordsList;
+            }
+            else
+            {
+                words = ArrReader.Read(@"C:\Users\mikheev_av1\Desktop\qweqwe.txt");//для чтения из файла
+            }
+            Console.Write("\n");
             int maxLength = 0;
             Words = new List<Word>();
             foreach (var w in words)
@@ -25,9 +32,15 @@ namespace NewArrChars
                 Words.Add(new Word(w));
             }
 
-            foreach (var w in Words)
+            Console.WriteLine("Нажмите Y, чтобы вывести все слова. Чтобы пропустить - Enter...\n");
+            if (Console.ReadKey().Key == ConsoleKey.Y)
             {
-                w.Print(maxLength);
+                Console.Write("\n");
+                Console.Clear();
+                foreach (var w in Words)
+                {
+                    w.Print(maxLength);
+                }
             }
 
             MaxSubsequence maxSubseq = new MaxSubsequence(Words);

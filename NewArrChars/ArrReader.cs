@@ -7,7 +7,7 @@ namespace NewArrChars
 {
     public static class ArrReader
     {
-        public static string[] Read(string path)
+        public static List<string> Read(string path)
         {
             try
             {
@@ -15,13 +15,18 @@ namespace NewArrChars
                 string line = sr.ReadLine();
                 sr.Close();
                 string[] words = line.Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
-                return words;
+                List<string> res = new List<string>();
+                foreach (var word in words)
+                {
+                    res.Add(word);
+                }
+                return res;
             }
             catch (Exception e)
             {
                 Console.WriteLine("Ошибка: " + e.Message);
             }
-            return new string[0];
+            return new List<string>();
         }
     }
 }

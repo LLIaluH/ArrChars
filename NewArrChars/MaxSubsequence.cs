@@ -146,7 +146,7 @@ namespace NewArrChars
                     {
                         //Console.WriteLine("\t\'" + seq.FromWord.WordStr + "\'\t (" + seq.Str + ")");
                         Console.ForegroundColor = ConsoleColor.Blue;
-                        Console.Write("\n\t\'{0}\'\t", seq.FromWord.WordStr);
+                        Console.Write("\n\t{0,20}\t", seq.FromWord.WordStr);
                         Console.ResetColor();
                         Console.Write("({0})", seq.Str);
                     }
@@ -161,7 +161,7 @@ namespace NewArrChars
                 foreach (var centralSeq in maxCentrals)
                 {
                     Console.ForegroundColor = ConsoleColor.Blue;
-                    Console.Write("\n\t\'" + centralSeq.FromWord.WordStr + "\'\t");
+                    Console.Write("\n\t{0}\t", centralSeq.FromWord.WordStr);
                     Console.ResetColor();
                     Console.Write("(" + centralSeq.Str + ")\n");
                     Console.ForegroundColor = ConsoleColor.Green;
