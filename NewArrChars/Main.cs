@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Text;
 
 namespace NewArrChars
@@ -18,7 +19,8 @@ namespace NewArrChars
             }
             else
             {
-                words = ArrReader.Read(@"C:\Users\mikheev_av1\Desktop\qweqwe.txt");//для чтения из файла
+                string path = Directory.GetCurrentDirectory();
+                words = ArrReader.Read(path + @"\qweqwe.txt");//для чтения из файла 
             }
             Console.Write("\n");
             int maxLength = 0;
