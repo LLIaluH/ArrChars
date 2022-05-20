@@ -14,16 +14,20 @@ namespace NewArrChars
             //ArrGenerator arrGenerator = new ArrGenerator(100, 100);//для генератора
             //var words = arrGenerator.WordsList;
 
-
+            int maxLength = 0;
             Words = new List<Word>();
             foreach (var w in words)
             {
+                if (maxLength < w.Length)
+                {
+                    maxLength = w.Length;
+                }
                 Words.Add(new Word(w));
             }
 
             foreach (var w in Words)
             {
-                w.Print();
+                w.Print(maxLength);
             }
 
             MaxSubsequence maxSubseq = new MaxSubsequence(Words);

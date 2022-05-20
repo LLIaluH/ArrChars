@@ -63,13 +63,13 @@ namespace NewArrChars
             }
         }
 
-        public void Print()
+        public void Print(int maxLength = 50)
         {
-            Console.Write(WordStr + "\t");
+            Console.Write("{0, "+ maxLength + "}\t", WordStr);
             Console.ForegroundColor = ConsoleColor.Cyan;
             foreach (var seq in subSequenses)
             {
-                Console.Write("(" + seq.Str + ") ");
+                Console.Write("({0}) ", seq.Str);
             }
             Console.ResetColor();
             Console.Write("\n");
