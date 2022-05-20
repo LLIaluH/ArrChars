@@ -25,3 +25,17 @@ D:\Projects\ArrChars\NewArrChars\obj\Debug\netcoreapp3.1\NewArrChars.csproj.Core
 D:\Projects\ArrChars\NewArrChars\obj\Debug\netcoreapp3.1\NewArrChars.dll
 D:\Projects\ArrChars\NewArrChars\obj\Debug\netcoreapp3.1\NewArrChars.pdb
 D:\Projects\ArrChars\NewArrChars\obj\Debug\netcoreapp3.1\NewArrChars.genruntimeconfig.cache
+C:\Users\mikheev_av1\Desktop\GitCloneRepos\ArrChars\NewArrChars\bin\Debug\netcoreapp3.1\NewArrChars.exe
+C:\Users\mikheev_av1\Desktop\GitCloneRepos\ArrChars\NewArrChars\bin\Debug\netcoreapp3.1\NewArrChars.deps.json
+C:\Users\mikheev_av1\Desktop\GitCloneRepos\ArrChars\NewArrChars\bin\Debug\netcoreapp3.1\NewArrChars.runtimeconfig.json
+C:\Users\mikheev_av1\Desktop\GitCloneRepos\ArrChars\NewArrChars\bin\Debug\netcoreapp3.1\NewArrChars.runtimeconfig.dev.json
+C:\Users\mikheev_av1\Desktop\GitCloneRepos\ArrChars\NewArrChars\bin\Debug\netcoreapp3.1\NewArrChars.dll
+C:\Users\mikheev_av1\Desktop\GitCloneRepos\ArrChars\NewArrChars\bin\Debug\netcoreapp3.1\NewArrChars.pdb
+C:\Users\mikheev_av1\Desktop\GitCloneRepos\ArrChars\NewArrChars\obj\Debug\netcoreapp3.1\NewArrChars.csproj.AssemblyReference.cache
+C:\Users\mikheev_av1\Desktop\GitCloneRepos\ArrChars\NewArrChars\obj\Debug\netcoreapp3.1\NewArrChars.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mikheev_av1\Desktop\GitCloneRepos\ArrChars\NewArrChars\obj\Debug\netcoreapp3.1\NewArrChars.AssemblyInfoInputs.cache
+C:\Users\mikheev_av1\Desktop\GitCloneRepos\ArrChars\NewArrChars\obj\Debug\netcoreapp3.1\NewArrChars.AssemblyInfo.cs
+C:\Users\mikheev_av1\Desktop\GitCloneRepos\ArrChars\NewArrChars\obj\Debug\netcoreapp3.1\NewArrChars.csproj.CoreCompileInputs.cache
+C:\Users\mikheev_av1\Desktop\GitCloneRepos\ArrChars\NewArrChars\obj\Debug\netcoreapp3.1\NewArrChars.dll
+C:\Users\mikheev_av1\Desktop\GitCloneRepos\ArrChars\NewArrChars\obj\Debug\netcoreapp3.1\NewArrChars.pdb
+C:\Users\mikheev_av1\Desktop\GitCloneRepos\ArrChars\NewArrChars\obj\Debug\netcoreapp3.1\NewArrChars.genruntimeconfig.cache

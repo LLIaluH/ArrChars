@@ -66,10 +66,12 @@ namespace NewArrChars
         public void Print()
         {
             Console.Write(WordStr + "\t");
+            Console.ForegroundColor = ConsoleColor.Cyan;
             foreach (var seq in subSequenses)
             {
                 Console.Write("(" + seq.Str + ") ");
             }
+            Console.ResetColor();
             Console.Write("\n");
         }
     }

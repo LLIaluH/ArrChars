@@ -9,8 +9,12 @@ namespace NewArrChars
         List<Word> Words;
         public void Start()
         {
-            //var words = ArrReader.Read(@"C:\Users\Андрей\Desktop\new 1.txt");
-            var words = ArrReader.Read(@"C:\Users\mikheev_av1\Desktop\qweqwe.txt");
+            var words = ArrReader.Read(@"C:\Users\mikheev_av1\Desktop\qweqwe.txt");//для чтения из файла
+
+            //ArrGenerator arrGenerator = new ArrGenerator(100, 100);//для генератора
+            //var words = arrGenerator.WordsList;
+
+
             Words = new List<Word>();
             foreach (var w in words)
             {

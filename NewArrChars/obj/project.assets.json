@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mikheev_av1\\source\\repos\\ArrChars\\NewArrChars\\NewArrChars.csproj",
+      "projectUniqueName": "C:\\Users\\mikheev_av1\\Desktop\\GitCloneRepos\\ArrChars\\NewArrChars\\NewArrChars.csproj",
       "projectName": "NewArrChars",
-      "projectPath": "C:\\Users\\mikheev_av1\\source\\repos\\ArrChars\\NewArrChars\\NewArrChars.csproj",
+      "projectPath": "C:\\Users\\mikheev_av1\\Desktop\\GitCloneRepos\\ArrChars\\NewArrChars\\NewArrChars.csproj",
       "packagesPath": "C:\\Users\\mikheev_av1\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mikheev_av1\\source\\repos\\ArrChars\\NewArrChars\\obj\\",
+      "outputPath": "C:\\Users\\mikheev_av1\\Desktop\\GitCloneRepos\\ArrChars\\NewArrChars\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\mikheev_av1\\AppData\\Roaming\\NuGet\\NuGet.Config",

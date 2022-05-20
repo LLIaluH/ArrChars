@@ -144,10 +144,14 @@ namespace NewArrChars
                 {                    
                     foreach (var seq in fm)
                     {
-                        Console.WriteLine("\t\'" + seq.FromWord.WordStr + "\'\t (" + seq.Str + ")");
+                        //Console.WriteLine("\t\'" + seq.FromWord.WordStr + "\'\t (" + seq.Str + ")");
+                        Console.ForegroundColor = ConsoleColor.Blue;
+                        Console.Write("\n\t\'" + seq.FromWord.WordStr + "\'\t");
+                        Console.ResetColor();
+                        Console.Write("(" + seq.Str + ")");
                     }
                     Console.ForegroundColor = ConsoleColor.Green;
-                    Console.WriteLine("\tПоследовательность состоит из символов: \'" + fm[0].Simbol + "\' (" + MaxCountSimbolsInSeq + ")\n");
+                    Console.WriteLine("\n\tПоследовательность состоит из символов: \'" + fm[0].Simbol + "\' (" + MaxCountSimbolsInSeq + ")\n");
                     Console.ResetColor();
                 }
             }
@@ -156,7 +160,10 @@ namespace NewArrChars
             {
                 foreach (var centralSeq in maxCentrals)
                 {
-                    Console.WriteLine("\t\'" + centralSeq.FromWord.WordStr + "\'\t (" + centralSeq.Str + ")");
+                    Console.ForegroundColor = ConsoleColor.Blue;
+                    Console.Write("\n\t\'" + centralSeq.FromWord.WordStr + "\'\t");
+                    Console.ResetColor();
+                    Console.Write("(" + centralSeq.Str + ")\n");
                     Console.ForegroundColor = ConsoleColor.Green;
                     Console.WriteLine("\tПоследовательность состоит из символов: \'" + centralSeq.Simbol + "\' (" + MaxCountSimbolsInSeqCentral + ")\n");
                     Console.ResetColor();
