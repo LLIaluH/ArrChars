@@ -10,7 +10,7 @@ namespace NewArrChars
         public int Count;
         public string Str;
         public Word FromWord;
-
+        public bool blocked = false;
         public Sequens(Word word, string str)
         {
             if (!String.IsNullOrEmpty(str))

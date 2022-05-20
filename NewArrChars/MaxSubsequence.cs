@@ -46,14 +46,36 @@ namespace NewArrChars
                 {
                     char firstSimbol = currentWord.subSequenses[0].Simbol;
                     char lastSimbol = currentWord.subSequenses[currentWord.subSequenses.Count - 1].Simbol;
-                    if (MaxStartSeqDict[firstSimbol] == null || MaxStartSeqDict[firstSimbol].Count < currentWord.subSequenses[0].Count)//начало
+                    int firstSimCount = currentWord.subSequenses[0].Count;
+                    int lastSimCount = currentWord.subSequenses[currentWord.subSequenses.Count - 1].Count;
+                    if (firstSimbol == lastSimbol)
                     {
-                        MaxStartSeqDict[firstSimbol] = currentWord.subSequenses[0];
+                        if (firstSimCount < lastSimbol)
+                        {
+                            if (MaxEndSeqDict[lastSimbol] == null || MaxEndSeqDict[lastSimbol].Count < lastSimCount)//конец
+                            {
+                                MaxEndSeqDict[lastSimbol] = currentWord.subSequenses[currentWord.subSequenses.Count - 1];
+                            }
+                        }
+                        else
+                        {
+                            if (MaxStartSeqDict[firstSimbol] == null || MaxStartSeqDict[firstSimbol].Count < firstSimCount)//начало
+                            {
+                                MaxStartSeqDict[firstSimbol] = currentWord.subSequenses[0];
+                            }
+                        }
                     }
-                    if (MaxEndSeqDict[lastSimbol] == null
-                        || MaxEndSeqDict[lastSimbol].Count < currentWord.subSequenses[currentWord.subSequenses.Count - 1].Count)//конец
+                    else
                     {
-                        MaxEndSeqDict[lastSimbol] = currentWord.subSequenses[currentWord.subSequenses.Count - 1];
+                        if (MaxStartSeqDict[firstSimbol] == null || MaxStartSeqDict[firstSimbol].Count < firstSimCount)//начало
+                        {
+                            MaxStartSeqDict[firstSimbol] = currentWord.subSequenses[0];
+                        }
+                        if (MaxEndSeqDict[lastSimbol] == null
+                            || MaxEndSeqDict[lastSimbol].Count < lastSimCount)//конец
+                        {
+                            MaxEndSeqDict[lastSimbol] = currentWord.subSequenses[currentWord.subSequenses.Count - 1];
+                        }
                     }
                 }
 
