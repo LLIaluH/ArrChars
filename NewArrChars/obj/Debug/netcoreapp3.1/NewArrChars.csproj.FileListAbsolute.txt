@@ -39,3 +39,16 @@ C:\Users\mikheev_av1\Desktop\GitCloneRepos\ArrChars\NewArrChars\obj\Debug\netcor
 C:\Users\mikheev_av1\Desktop\GitCloneRepos\ArrChars\NewArrChars\obj\Debug\netcoreapp3.1\NewArrChars.dll
 C:\Users\mikheev_av1\Desktop\GitCloneRepos\ArrChars\NewArrChars\obj\Debug\netcoreapp3.1\NewArrChars.pdb
 C:\Users\mikheev_av1\Desktop\GitCloneRepos\ArrChars\NewArrChars\obj\Debug\netcoreapp3.1\NewArrChars.genruntimeconfig.cache
+D:\Projects\ArrChars\ArrChars\NewArrChars\bin\Debug\netcoreapp3.1\NewArrChars.exe
+D:\Projects\ArrChars\ArrChars\NewArrChars\bin\Debug\netcoreapp3.1\NewArrChars.deps.json
+D:\Projects\ArrChars\ArrChars\NewArrChars\bin\Debug\netcoreapp3.1\NewArrChars.runtimeconfig.json
+D:\Projects\ArrChars\ArrChars\NewArrChars\bin\Debug\netcoreapp3.1\NewArrChars.runtimeconfig.dev.json
+D:\Projects\ArrChars\ArrChars\NewArrChars\bin\Debug\netcoreapp3.1\NewArrChars.dll
+D:\Projects\ArrChars\ArrChars\NewArrChars\bin\Debug\netcoreapp3.1\NewArrChars.pdb
+D:\Projects\ArrChars\ArrChars\NewArrChars\obj\Debug\netcoreapp3.1\NewArrChars.csproj.AssemblyReference.cache
+D:\Projects\ArrChars\ArrChars\NewArrChars\obj\Debug\netcoreapp3.1\NewArrChars.AssemblyInfoInputs.cache
+D:\Projects\ArrChars\ArrChars\NewArrChars\obj\Debug\netcoreapp3.1\NewArrChars.AssemblyInfo.cs
+D:\Projects\ArrChars\ArrChars\NewArrChars\obj\Debug\netcoreapp3.1\NewArrChars.csproj.CoreCompileInputs.cache
+D:\Projects\ArrChars\ArrChars\NewArrChars\obj\Debug\netcoreapp3.1\NewArrChars.dll
+D:\Projects\ArrChars\ArrChars\NewArrChars\obj\Debug\netcoreapp3.1\NewArrChars.pdb
+D:\Projects\ArrChars\ArrChars\NewArrChars\obj\Debug\netcoreapp3.1\NewArrChars.genruntimeconfig.cache

@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mikheev_av1\\Desktop\\GitCloneRepos\\ArrChars\\NewArrChars\\NewArrChars.csproj": {}
+    "D:\\Projects\\ArrChars\\ArrChars\\NewArrChars\\NewArrChars.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mikheev_av1\\Desktop\\GitCloneRepos\\ArrChars\\NewArrChars\\NewArrChars.csproj": {
+    "D:\\Projects\\ArrChars\\ArrChars\\NewArrChars\\NewArrChars.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mikheev_av1\\Desktop\\GitCloneRepos\\ArrChars\\NewArrChars\\NewArrChars.csproj",
+        "projectUniqueName": "D:\\Projects\\ArrChars\\ArrChars\\NewArrChars\\NewArrChars.csproj",
         "projectName": "NewArrChars",
-        "projectPath": "C:\\Users\\mikheev_av1\\Desktop\\GitCloneRepos\\ArrChars\\NewArrChars\\NewArrChars.csproj",
-        "packagesPath": "C:\\Users\\mikheev_av1\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mikheev_av1\\Desktop\\GitCloneRepos\\ArrChars\\NewArrChars\\obj\\",
+        "projectPath": "D:\\Projects\\ArrChars\\ArrChars\\NewArrChars\\NewArrChars.csproj",
+        "packagesPath": "C:\\Users\\Андрей\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\ArrChars\\ArrChars\\NewArrChars\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\mikheev_av1\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Андрей\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -54,7 +57,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.300\\RuntimeIdentifierGraph.json"
         }
       }
     }

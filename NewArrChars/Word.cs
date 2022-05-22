@@ -6,19 +6,23 @@ namespace NewArrChars
 {
     class Word
     {
+        private static uint ID;
+        public uint Id { get; private set; }
+
         public string WordStr;
-        public List<Sequens> subSequenses;
+        public List<Sequence> subSequenses;
 
         public Word(string str)
         {
+            this.Id = ID++;
             WordStr = str;
-            subSequenses = new List<Sequens>();
+            subSequenses = new List<Sequence>();
             if (string.IsNullOrEmpty(str))            
                 return;
             
             if (str.Length == 1)
             {
-                subSequenses.Add( new Sequens(this, str));
+                subSequenses.Add( new Sequence(this, str));
             }
             else
             {
@@ -32,11 +36,11 @@ namespace NewArrChars
                         {
                             if (s[0] == str[i + 1])
                             {
-                                subSequenses.Add(new Sequens(this, s + str[str.Length - 1].ToString()));
+                                subSequenses.Add(new Sequence(this, s + str[str.Length - 1].ToString()));
                             }
                             else
                             {
-                                subSequenses.Add(new Sequens(this, str[str.Length - 1].ToString()));
+                                subSequenses.Add(new Sequence(this, str[str.Length - 1].ToString()));
                             }
                             break;
                         }
@@ -44,16 +48,16 @@ namespace NewArrChars
                     }
                     else
                     {
-                        subSequenses.Add(new Sequens(this, s));
+                        subSequenses.Add(new Sequence(this, s));
                         if (i + 2 == str.Length)
                         {
                             if (s[0] == str[i + 1])
                             {
-                                subSequenses.Add(new Sequens(this, s + str[str.Length - 1].ToString()));
+                                subSequenses.Add(new Sequence(this, s + str[str.Length - 1].ToString()));
                             }
                             else
                             {
-                                subSequenses.Add(new Sequens(this, str[str.Length - 1].ToString()));
+                                subSequenses.Add(new Sequence(this, str[str.Length - 1].ToString()));
                             }
                             break;
                         }
