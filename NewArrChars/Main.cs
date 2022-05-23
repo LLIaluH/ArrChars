@@ -14,7 +14,7 @@ namespace NewArrChars
             List<string> words;
             if (Console.ReadKey().Key == ConsoleKey.Y)
             {
-                ArrGenerator arrGenerator = new ArrGenerator(50, 100000);//для генератора
+                ArrGenerator arrGenerator = new ArrGenerator(20, 100);//для генератора
                 words = arrGenerator.WordsList;
             }
             else
