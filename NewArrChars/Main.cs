@@ -10,42 +10,48 @@ namespace NewArrChars
         List<Word> Words;
         public void Start()
         {
-            Console.WriteLine("Нажмите Y, чтобы автоматически сгенерировать слова. Чтобы читать из файла, нажмите Enter...");
-            List<string> words;
-            if (Console.ReadKey().Key == ConsoleKey.Y)
+            while (true)
             {
-                ArrGenerator arrGenerator = new ArrGenerator(20, 100);//для генератора
-                words = arrGenerator.WordsList;
-            }
-            else
-            {
-                string path = Directory.GetCurrentDirectory();
-                words = ArrReader.Read(path + @"\qweqwe.txt");//для чтения из файла 
-            }
-            Console.Write("\n");
-            int maxLength = 0;
-            Words = new List<Word>();
-            foreach (var w in words)
-            {
-                if (maxLength < w.Length)
-                {
-                    maxLength = w.Length;
-                }
-                Words.Add(new Word(w));
-            }
-
-            Console.WriteLine("Нажмите Y, чтобы вывести все слова. Чтобы пропустить - Enter...\n");
-            if (Console.ReadKey().Key == ConsoleKey.Y)
-            {
-                Console.Write("\n");
                 Console.Clear();
-                foreach (var w in Words)
+                Console.WriteLine("Нажмите Y, чтобы автоматически сгенерировать слова. Чтобы читать из файла, нажмите Enter...");
+                List<string> words;
+                if (Console.ReadKey().Key == ConsoleKey.Y)
                 {
-                    w.Print(maxLength);
+                    ArrGenerator arrGenerator = new ArrGenerator(20, 100);//для генератора
+                    words = arrGenerator.WordsList;
                 }
-            }
+                else
+                {
+                    string path = Directory.GetCurrentDirectory();
+                    words = ArrReader.Read(path + @"\qweqwe.txt");//для чтения из файла 
+                }
+                Console.Write("\n");
+                int maxLength = 0;
+                Words = new List<Word>();
+                foreach (var w in words)
+                {
+                    if (maxLength < w.Length)
+                    {
+                        maxLength = w.Length;
+                    }
+                    Words.Add(new Word(w));
+                }
 
-            MaxSubsequence maxSubseq = new MaxSubsequence(Words);
+                Console.WriteLine("Нажмите Y, чтобы вывести все слова. Чтобы пропустить - Enter...\n");
+                if (Console.ReadKey().Key == ConsoleKey.Y)
+                {
+                    Console.Write("\n");
+                    Console.Clear();
+                    foreach (var w in Words)
+                    {
+                        w.Print(maxLength);
+                    }
+                }
+
+                MaxSubsequence maxSubseq = new MaxSubsequence(Words);
+                Console.ReadKey();
+            }
+            
 
             Console.ReadLine();
         }

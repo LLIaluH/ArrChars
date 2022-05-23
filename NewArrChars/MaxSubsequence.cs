@@ -84,16 +84,25 @@ namespace NewArrChars
                             {
                                 if (MaxStartSeqDict[firstSimbol].Count > MaxEndSeqDict[lastSimbol].Count)
                                 {
-                                    MaxEndSeqDict[lastSimbol] = currentWord.subSequenses[currentWord.subSequenses.Count - 1];
+                                    if (MaxEndSeqDict[lastSimbol].Count < currentWord.subSequenses[currentWord.subSequenses.Count - 1].Count)
+                                    {
+                                        MaxEndSeqDict[lastSimbol] = currentWord.subSequenses[currentWord.subSequenses.Count - 1];
+                                    }
                                 }
                                 else
                                 {
-                                    MaxStartSeqDict[firstSimbol] = currentWord.subSequenses[0];
+                                    if (MaxStartSeqDict[firstSimbol].Count < currentWord.subSequenses[0].Count)
+                                    {
+                                        MaxStartSeqDict[firstSimbol] = currentWord.subSequenses[0];
+                                    }
                                 }
                             }
                             else if (MaxStartSeqDict[firstSimbol].Count == MaxEndSeqDict[lastSimbol].Count)//начало
                             {
-                                MaxStartSeqDict[firstSimbol] = currentWord.subSequenses[0];
+                                if (MaxStartSeqDict[firstSimbol].Count < currentWord.subSequenses[0].Count)
+                                {
+                                    MaxStartSeqDict[firstSimbol] = currentWord.subSequenses[0];
+                                }
                             }
                         }
                     }
