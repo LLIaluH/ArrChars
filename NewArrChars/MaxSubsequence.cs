@@ -215,7 +215,7 @@ namespace NewArrChars
                         Console.ForegroundColor = ConsoleColor.Blue;
                         Console.Write("\n\t{0,20}\t", seq.FromWord.WordStr);
                         Console.ResetColor();
-                        Console.Write("({0})", seq.Str);
+                        Console.Write("({0})", seq.FromWord.WordStr);
                     }
                     Console.ForegroundColor = ConsoleColor.Green;
                     Console.WriteLine("\n\tПоследовательность состоит из символов: \'{0}\' ({1})\n", fm[0].Simbol, MaxCountSimbolsInSeq);
@@ -230,7 +230,7 @@ namespace NewArrChars
                     Console.ForegroundColor = ConsoleColor.Blue;
                     Console.Write("\n\t{0}\t", centralSeq.FromWord.WordStr);
                     Console.ResetColor();
-                    Console.Write("(" + centralSeq.Str + ")\n");
+                    Console.Write("(" + centralSeq.FromWord.WordStr + ")\n");
                     Console.ForegroundColor = ConsoleColor.Green;
                     Console.WriteLine("\tПоследовательность состоит из символов: \'{0}\' ({1})\n", centralSeq.Simbol, MaxCountSimbolsInSeqCentral);
                     Console.ResetColor();

@@ -8,7 +8,7 @@ namespace NewArrChars
     {
         public char Simbol;
         public int Count;
-        public string Str;
+        //public string Str;
         public Word FromWord;
         public Sequence(Word word, string str)
         {
@@ -21,18 +21,18 @@ namespace NewArrChars
                 Simbol = ' ';
             }
             Count = str.Length;
-            Str = str;
+            //Str = str;
             FromWord = word;
         }
 
         public Sequence(char simbol, int count)
         {
-            Str = "";
+            //Str = "";
             if (simbol != ' ')
             {
                 for (int i = 0; i < count; i++)
                 {
-                    Str += simbol;
+                    //Str += simbol;
                 }
             }
             Count = count;

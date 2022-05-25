@@ -11,10 +11,11 @@ namespace NewArrChars
         {
             try
             {
-                StreamReader sr = new StreamReader(path);
-                string line = sr.ReadLine();
-                sr.Close();
-                string[] words = line.Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
+                //StreamReader sr = new StreamReader(path);
+                //string line = sr.ReadLine();
+                //sr.Close();
+                //string[] words = line.Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
+                var words = File.ReadAllLines(path);
                 List<string> res = new List<string>();
                 foreach (var word in words)
                 {

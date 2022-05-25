@@ -10,6 +10,7 @@ namespace NewArrChars
         List<Word> Words;
         public void Start()
         {
+            var sw = new System.Diagnostics.Stopwatch();
             while (true)
             {
                 Console.Clear();
@@ -17,16 +18,26 @@ namespace NewArrChars
                 List<string> words;
                 if (Console.ReadKey().Key == ConsoleKey.Y)
                 {
+                    sw.Reset();
+                    sw.Start();
                     ArrGenerator arrGenerator = new ArrGenerator(20, 100);//для генератора
                     words = arrGenerator.WordsList;
+                    sw.Stop();
+                    Console.WriteLine($"Время затраченное на генерацию: {sw.ElapsedMilliseconds} ms");
                 }
                 else
                 {
                     string path = Directory.GetCurrentDirectory();
-                    words = ArrReader.Read(path + @"\qweqwe.txt");//для чтения из файла 
+                    sw.Reset();
+                    sw.Start();
+                    words = ArrReader.Read(path + @"\Data.txt");//для чтения из файла 
+                    sw.Stop();
+                    Console.WriteLine($"Время затраченное на чтение из файла: {sw.ElapsedMilliseconds} ms");
                 }
                 Console.Write("\n");
                 int maxLength = 0;
+                sw.Reset();
+                sw.Start();
                 Words = new List<Word>();
                 foreach (var w in words)
                 {
@@ -36,7 +47,8 @@ namespace NewArrChars
                     }
                     Words.Add(new Word(w));
                 }
-
+                sw.Stop();
+                Console.WriteLine($"Время затраченное на поиск последовательностей: {sw.ElapsedMilliseconds} ms");
                 Console.WriteLine("Нажмите Y, чтобы вывести все слова. Чтобы пропустить - Enter...\n");
                 if (Console.ReadKey().Key == ConsoleKey.Y)
                 {
@@ -47,8 +59,11 @@ namespace NewArrChars
                         w.Print(maxLength);
                     }
                 }
-
+                sw.Reset();
+                sw.Start();
                 MaxSubsequence maxSubseq = new MaxSubsequence(Words);
+                sw.Stop();
+                Console.WriteLine($"Время затраченное на поиск самой длинной последовательности: {sw.ElapsedMilliseconds} ms");
                 Console.ReadKey();
             }
             

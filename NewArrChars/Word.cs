@@ -6,15 +6,11 @@ namespace NewArrChars
 {
     class Word
     {
-        private static uint ID;
-        public uint Id { get; private set; }
-
         public string WordStr;
         public List<Sequence> subSequenses;
 
         public Word(string str)
         {
-            this.Id = ID++;
             WordStr = str;
             subSequenses = new List<Sequence>();
             if (string.IsNullOrEmpty(str))            
@@ -73,7 +69,7 @@ namespace NewArrChars
             Console.ForegroundColor = ConsoleColor.Cyan;
             foreach (var seq in subSequenses)
             {
-                Console.Write("({0}) ", seq.Str);
+                Console.Write("({0}) ", seq.FromWord.WordStr);
             }
             Console.ResetColor();
             Console.Write("\n");
