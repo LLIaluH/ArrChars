@@ -44,7 +44,23 @@ namespace NewArrChars
                     }
                     else
                     {
-                        subSequenses.Add(new Sequence(this, s));
+                        if (subSequenses.Count == 0)
+                        {
+                            subSequenses.Add(new Sequence(this, s));
+                        }
+                        else if (subSequenses.Count > 0 && subSequenses[subSequenses.Count - 1].Count <= s.Length)
+                        {
+                            if (subSequenses.Count > 1)
+                            {
+                                subSequenses.RemoveAt(subSequenses.Count - 1);
+                            }
+                            if (s.Length > 1)
+                            {
+                                subSequenses.Add(new Sequence(this, s));
+                            }
+                        }
+                        //subSequenses.Add(new Sequence(this, s));
+
                         if (i + 2 == str.Length)
                         {
                             if (s[0] == str[i + 1])
@@ -69,7 +85,12 @@ namespace NewArrChars
             Console.ForegroundColor = ConsoleColor.Cyan;
             foreach (var seq in subSequenses)
             {
-                Console.Write("({0}) ", seq.FromWord.WordStr);
+                string s = "";
+                for (int i = 0; i < seq.Count; i++)
+                {
+                    s += seq.Simbol;
+                }
+                Console.Write("({0}) ", s);
             }
             Console.ResetColor();
             Console.Write("\n");
